@@ -130,6 +130,9 @@ body,.s{background:#000!important}
 
 def md(t):
     t = html.escape(t)
+    # česká typografie: jednopísmenné předložky a spojky k dalšímu slovu, poslední slovo nezůstane samo
+    t = re.sub(r"(?<![\w&])([vkszaiouVKSZAIOU]) ", "\\1\u00a0", t)
+    t = "\n".join(re.sub(r" (\S{1,14})$", "\u00a0\\1", r) if len(r) > 24 else r for r in t.split("\n"))
     t = re.sub(r"(\w+-\w+)", r'<span style="white-space:nowrap">\1</span>', t)
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"__(.+?)__", r'<span class="u">\1</span>', t)
