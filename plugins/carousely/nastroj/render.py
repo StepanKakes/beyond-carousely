@@ -97,6 +97,7 @@ html,body{width:1080px;height:1440px;overflow:hidden;background:#000}
 .pul{position:absolute;left:0;right:0;height:720px;overflow:hidden}
 .pul img{width:100%;height:100%;object-fit:cover}
 .pul .tma{position:absolute;inset:0}
+.pul .pas{position:absolute;left:0;right:0;height:440px;transform:translateY(-50%)}
 .uz{margin-left:-.1em}
 .grad{position:absolute;left:0;right:0;bottom:0;height:78%;background:linear-gradient(to top,rgba(0,0,0,.84) 0%,rgba(0,0,0,.62) 30%,rgba(0,0,0,.3) 60%,rgba(0,0,0,.08) 85%,rgba(0,0,0,0) 100%)}
 .lab{position:absolute;left:0;right:0;text-align:center;font-weight:800;font-size:66px;line-height:1.06;
@@ -114,7 +115,7 @@ html,body{width:1080px;height:1440px;overflow:hidden;background:#000}
 
 CSS_FOTO = ".vrstva:not(.boxy),.lab,.vs{visibility:hidden!important}"
 CSS_MASKA = """
-.ph,.pul,.tma,.grad{visibility:hidden!important}
+.ph,.pul,.tma,.grad,.pas{visibility:hidden!important}
 body,.s{background:#000!important}
 *{text-shadow:none!important}
 .red,.u{color:inherit!important}
@@ -208,8 +209,12 @@ def slide_html(s, cfg, mode="normal"):
             pb = bool(p.get("podklad", box))
             g = '<div class="grad"></div>' if p.get("grad") else ""
             t = f'<div class="tma" style="opacity:{p["tma"]}"></div>' if p.get("tma") else ""
-            out.append(f'<div class="pul" style="top:{top}px">{img_tag(f(p["foto"]), p)}{t}{g}</div>')
             ly = p.get("lab_y", 62)
+            # měkké ztmavení jen za textem (bílý stůl za postavou), žádný ostrý podklad
+            ps = p.get("pas")
+            ps = (f'<div class="pas" style="top:{720 * ly / 100}px;background:linear-gradient(to bottom,rgba(0,0,0,0),'
+                  f'rgba(0,0,0,{ps}) 32%,rgba(0,0,0,{ps}) 68%,rgba(0,0,0,0))"></div>') if ps else ""
+            out.append(f'<div class="pul" style="top:{top}px">{img_tag(f(p["foto"]), p)}{t}{ps}{g}</div>')
             styl = p.get("styl", "")
             if isinstance(p.get("text"), list):
                 obsah = "".join(f"<p>{hl(md(t), pb)}</p>" for t in p["text"])
@@ -373,6 +378,7 @@ def zmer(foto_png, maska_png, hlavy, oblast=(0, 0, W, H)):
 
 
 TMA_KROKY = (0, .1, .15, .2, .25)
+PAS_KROKY = (.2, .3, .4)   # měkký pás za textem ve splitu, když plošné ztmavení nestačí
 TMA_MAX = TMA_KROKY[-1]
 
 
@@ -445,17 +451,23 @@ def kontrola_slidu(i, s, cfg, tmp):
     zpravy = []
     for nazev, cil, oblast, idx in casti:
         vysl = None
-        for tma in TMA_KROKY:
+        cil.pop("pas", None)
+        # nejdřív plošné lehké ztmavení, u splitu pak navíc měkký pás za textem
+        kroky = [(t_, 0) for t_ in TMA_KROKY] + ([(TMA_KROKY[-1], p_) for p_ in PAS_KROKY] if fmt == "split" else [])
+        for tma, pas in kroky:
             s2 = json.loads(json.dumps(s))
-            (s2[nazev] if fmt == "split" else s2)["tma"] = tma
+            c2 = s2[nazev] if fmt == "split" else s2
+            c2["tma"] = tma
+            if pas: c2["pas"] = pas
             m = mer(s2, [(0, 0, W, 720), (0, 720, W, H)] if fmt == "split" else [oblast])[idx]
-            vysl = (tma, m)
+            vysl = (tma, pas, m)
             if cte(m):
                 break
-        tma, m = vysl
+        tma, pas, m = vysl
         if tma: cil["tma"] = tma
         else: cil.pop("tma", None)
-        t = f"{nazev}: tma {tma}, kontrast {m[0]}/{m[1]}"
+        if pas: cil["pas"] = pas
+        t = f"{nazev}: tma {tma}{f', pas {pas}' if pas else ''}, kontrast {m[0]}/{m[1]}"
         if not cte(m): t += ", POZOR nečitelné i po ztmavení, vyber jinou fotku nebo místo textu"
         if m[2]: t += ", POZOR text na hlavě"
         zpravy.append(t)

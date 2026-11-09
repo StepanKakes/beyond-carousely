@@ -1,5 +1,7 @@
 # Seřadí fotky z banky pro půlku splitu: výřez bez zoomu, hlava celá a mimo pás textu,
 # většina postavy v záběru, kontrast bílého textu v pásu uprostřed.
+# Fotka s obličejem: výřez se řídí hlavou, ne kontrastem. Hlava nahoře v půlce (pod logem VS),
+# text pak jde přes tělo nebo stůl s lehkým ztmavením. Nikdy postavu nestrkat ke spodnímu okraji.
 # Použití: python3 pulky.py <složka_fotky> [lab_y_v_procentech, výchozí 50]
 # Výpis: fotka, nejlepší y výřezu, kontrast, má obličej, má postavu (seřazeno od nejčitelnějšího).
 import json, os, subprocess, sys
@@ -35,6 +37,16 @@ for sl in ("prace", "lifestyle", "portrety"):
         hl = max(hl, key=lambda r: r[2] * r[3]) if hl else None
         po = max(d["postavy"], key=lambda r: r[2] * r[3]) if d["postavy"] else None
         best = None
+        if d["tvare"]:
+            x_, y_, w_, h_ = max(d["tvare"], key=lambda r: r[2] * r[3])
+            fc, hp = (y_ + h_ / 2) * H, h_ * H
+            y = max(0, min(100, round((fc - (50 + 1.5 * hp)) / (H - 720) * 100)))
+            top = (H - 720) * y / 100
+            if fc + .75 * hp - top < PAS[0] + 20:              # hlava nad pásem textu
+                band = L[int(top + PAS[0]):int(top + PAS[1]), 64:1016]
+                best = (y, round(1.05 / (np.percentile(band, 92) + .05), 2))
+            if best: out.append((k, best[0], best[1], True, bool(po)))
+            continue
         for y in range(0, 101, 5):
             top = (H - 720) * y / 100
             if hl:

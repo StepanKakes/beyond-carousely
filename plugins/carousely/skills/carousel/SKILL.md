@@ -20,7 +20,7 @@ Uživatel je klient (typicky Marek Trnka, @marektrnka.sales), ne grafik. Mluv č
 
 1. **Obsah je vždy klientův.** Text vezmi od klienta (zadání, `texty.md`) a jen ho rozděl do formátu. Nic nevymýšlej: žádné příběhy, čísla, kariéru, nové příklady. Od tvůrců se bere jen řemeslo (kde hook, kde CTA, kolik textu, rytmus), nikdy jejich témata. Když klient text nemá, napiš ho jeho hlasem z jeho podkladů a nech ho schválit, než renderuješ. Čísla (obrat, roky, počty) jen ta, která klient sám uvedl.
 2. **Fotky:** nic se nemaže. Přednost mají zachycené momenty (pracuje, někde je). Ukazující a pózující fotky jen na hook a CTA, a jen když gesto míří na text. Každá fotka v carouselu jednou. Děti jen když klient výslovně chce.
-3. **Výřez se řídí postavou:** hlava a hlavní motiv celé, nikdy jen tělo, nohy, strop. Nepřibližuj kvůli textu. Fotky do splitu vybírej ručně podle náhledu.
+3. **Výřez se řídí postavou:** hlava a hlavní motiv celé, nikdy jen tělo, nohy, strop. Nepřibližuj kvůli textu. Člověka u stolu nikdy nestrkej ke spodnímu okraji: hlava patří do horní části půlky (pod VS) a text klidně jde přes jeho tělo nebo stůl, jen nikdy přes obličej. Fotky do splitu vybírej ručně podle náhledu.
 4. **Čitelnost:** nejdřív výběr fotky a místo textu, pak lehké ztmavení 0,1 až 0,25 (dělá `--kontrola` sama). Ve splitu nikdy černý podklad. Shelby bez stínu.
 5. **Split:** text na všech slidech na stejném místě a stejně velký (Maddie `lab_y` 50, Jeremy `lab_y` 92 nahoře i dole). VS začíná rovnou prvním párem vět.
 6. **Jazyk:** česky, přirozeně, jak klient mluví. Žádné emoji, pomlčky, šipky, trojice záporů, „Tady je X věcí“. Klíčové slovo CTA bez diakritiky.
@@ -40,6 +40,6 @@ Uživatel je klient (typicky Marek Trnka, @marektrnka.sales), ne grafik. Mluv č
    „Všechny styly“ = udělej všech šest.
 4. **JSON.** Zkopíruj `sablony/<styl>.json` do složky klienta, nastav `nazev`, `vystup` (`export/<nazev>`), `jmeno` a `handle` z `profil.json`, a vlož klientův text podle principů stylu ze `styl.md`.
 5. **Fotky.** Do splitu: `$PY $N/pulky.py <klient>/fotky [lab_y]` seřadí banku podle klidného místa pro text. Z nejlepších udělej malý náhled půlek, prohlédni ho a vyber. Ostatní formáty podle `katalog.md`.
-6. **Render.** `$PY $N/render.py <carousel>.json --kontrola` (jeden slide: přidej jeho číslo). Kontrola posune kartu nebo text a lehce ztmaví, fotku nemění. Řádky POZOR v `export/<nazev>/kontrola.txt` vyřeš jinou fotkou nebo místem textu.
+6. **Render.** `$PY $N/render.py <carousel>.json --kontrola` (jeden slide: přidej jeho číslo). Kontrola posune kartu nebo text a lehce ztmaví (ve splitu případně měkký pás za textem), fotku nemění. Řádky POZOR v `export/<nazev>/kontrola.txt` vyřeš jinou fotkou nebo místem textu.
 7. **Ověření.** Pošli hotové slidy agentovi `carousely:overovac` a oprav, co najde. Sám se dívej jen na malé náhledy.
 8. **Předání.** Ukaž klientovi slidy (cesty k PNG v `export/<nazev>/`, pošli je, pokud to prostředí umí) a jednou větou napiš, co je v carouselu a co by měl zkontrolovat (třeba čísla). Opravy dělej podle jeho slov.
