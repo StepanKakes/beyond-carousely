@@ -28,7 +28,7 @@ Uživatel je klient (typicky Marek Trnka, @marektrnka.sales), ne grafik. Mluv č
 ## Postup
 
 1. **Klient a složka.** Podívej se do `~/Documents/carousely/`. Když složka klienta existuje, použij ji. Když ne:
-   - Marek: jeho připravená složka je na Google Drive ve složce `marek-trnka-carousel-podklady` jako zip `marek-trnka.zip`. Ať ho stáhne a rozbalí do `~/Documents/carousely/`, nebo ti dá cestu ke staženému zipu a rozbal ho sám (výsledek musí být `~/Documents/carousely/marek-trnka/`).
+   - Marek: jeho připravená složka je na Google Drive ve složce `marek-trnka-carousel-podklady` (https://drive.google.com/drive/folders/1bdoclgtxn0nm0v4dJkZZMT96IcP3Q-Jp) jako zip `marek-trnka.zip`. Ať ho stáhne a rozbalí do `~/Documents/carousely/`, nebo ti dá cestu ke staženému zipu a rozbal ho sám (výsledek musí být `~/Documents/carousely/marek-trnka/`).
    - Nový klient: zeptej se na složku s fotkami, profilovku a IG jméno, pak postav banku (krok 2).
 2. **Fotobanka (jen poprvé).** `$PY $N/arch.py <složka> <tmp>/arch 24 6 320`, prohlédni archy, sepiš `seznam.tsv` (`soubor|kategorie|nazev|popis a tip`; kategorie portrety, prace, lifestyle, pribeh, rodina, detaily) a spusť `$PY $N/banka.py <zdroj> <klient>/fotky seznam.tsv`. Profilovku ulož jako `avatar.jpg` celou, neořezávej.
 3. **Styl.** Když ho klient neřekl, doporuč jeden podle obsahu a v jedné větě řekni proč:
