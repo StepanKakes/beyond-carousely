@@ -1,0 +1,62 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Jeremy tweet",
+ "vystup": "export/jeremy-tweet",
+ "slidy": [
+  {
+   "format": "tweet",
+   "text": [
+    "„Je to moc drahé, čekal jsem míň.“"
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Jsem Marek. 12 let dělám B2B obchod a uzavřel jsem přes 100 milionů korun.",
+    "Tuhle větu slyším pořád. A jednou mě stála docela velkej kšeft."
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Průměrný obchodník v tu chvíli začne obhajovat cenu:",
+    "„Ale vždyť je to kvalitní.“",
+    "„Ale konkurence je dražší.“",
+    "Klient se zavře a už jen brání svoji pravdu."
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Mých 12 let v obchodu mě naučilo jednu věc.",
+    "„Drahé“ neznamená ne.",
+    "Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl."
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Řekni tohle:",
+    "„Rozumím. Je to drahé, protože je to teď mimo váš rozpočet? Nebo protože zatím nevidíte, co vám to přinese?“"
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Tím, že jsi mu dal za pravdu, nemá s kým bojovat.",
+    "Tím, že ses zeptal, musí přemýšlet.",
+    "A ty víš, co řešit dál: peníze, nebo hodnotu."
+   ]
+  },
+  {
+   "format": "tweet",
+   "text": [
+    "Na „drahé“ odpověď máš. Dalších 39 je v e-booku.",
+    "Napiš do komentáře __NAMITKA__ a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ]
+  }
+ ]
+}

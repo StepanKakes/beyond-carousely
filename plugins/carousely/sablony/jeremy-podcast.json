@@ -1,0 +1,118 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Jeremy podcast čísla",
+ "vystup": "export/jeremy-podcast",
+ "slidy": [
+  {
+   "format": "hook",
+   "varianta": "jeremy",
+   "foto": "portrety/portrety_tmave_vazny_ruce.jpg",
+   "grad": true,
+   "pozice": 76,
+   "text": "Je to drahé",
+   "sub": "Co říct, když klient řekne: „Je to moc drahé, čekal jsem míň.“"
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_tmave_mikrofon.jpg",
+    "y": 80,
+    "text": "1. ==Neobhajuj cenu==",
+    "lab_y": 92,
+    "styl": "jer"
+   },
+   "dolni": {
+    "foto": "prace/prace_nataceni_kamera_popredi.jpg",
+    "y": 40,
+    "text": [
+     "Průměrný obchodník začne: „Ale vždyť je to kvalitní.“ „Ale konkurence je dražší.“",
+     "Klient se zavře a už jen brání svoji pravdu."
+    ],
+    "lab_y": 92,
+    "styl": "jtext",
+    "grad": true
+   }
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_tmave_klidny_stul.jpg",
+    "y": 20,
+    "text": "2. ==Drahé neznamená ne==",
+    "lab_y": 92,
+    "styl": "jer",
+    "tma": 0.25
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_podpis_papir.jpg",
+    "y": 50,
+    "text": [
+     "Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl."
+    ],
+    "lab_y": 92,
+    "styl": "jtext",
+    "grad": true
+   }
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_tmave_usmev_notebook.jpg",
+    "y": 10,
+    "text": "3. ==Řekni tohle==",
+    "lab_y": 92,
+    "styl": "jer"
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_siroky_studio.jpg",
+    "y": 50,
+    "text": [
+     "„Rozumím. Je to drahé, protože je to teď mimo váš rozpočet? Nebo protože zatím nevidíte, co vám to přinese?“"
+    ],
+    "lab_y": 92,
+    "styl": "jtext",
+    "grad": true
+   }
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_knihovna_usmev_notebook.jpg",
+    "y": 50,
+    "text": "4. ==Proč to funguje==",
+    "lab_y": 92,
+    "styl": "jer"
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_siroky_stul.jpg",
+    "y": 50,
+    "text": [
+     "Dal jsi mu za pravdu, nemá s kým bojovat. Zeptal ses, musí přemýšlet.",
+     "A ty víš, co řešit dál: peníze, nebo hodnotu."
+    ],
+    "lab_y": 92,
+    "styl": "jtext",
+    "grad": true
+   }
+  },
+  {
+   "format": "pribeh",
+   "foto": "portrety/portrety_tmave_palec_usmev.jpg",
+   "grad": true,
+   "pozice": "bottom",
+   "zarovnani": "vlevo",
+   "text": [
+    "12 let dělám B2B obchod a uzavřel jsem přes 100 milionů korun.",
+    "Dalších 39 odpovědí je v e-booku. Komentuj „==NAMITKA==“ a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ],
+   "tma": 0.1
+  }
+ ]
+}

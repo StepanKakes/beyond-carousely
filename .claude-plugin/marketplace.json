@@ -1,0 +1,12 @@
+{
+  "name": "beyond-carousely",
+  "owner": { "name": "Beyond" },
+  "plugins": [
+    {
+      "name": "carousely",
+      "source": "./plugins/carousely",
+      "description": "IG carousely ve stylech Maddie, Shelby a Jeremy z tvého textu a tvých fotek, s kontrolou čitelnosti"
+    }
+  ],
+  "metadata": { "description": "Carousely od Beyond" }
+}

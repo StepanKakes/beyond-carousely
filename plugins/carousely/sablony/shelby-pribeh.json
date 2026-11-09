@@ -1,0 +1,81 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Shelby příběh",
+ "vystup": "export/shelby-pribeh",
+ "slidy": [
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_dubaj_burj_khalifa_bryle.jpg",
+   "velikost": "maly",
+   "pozice": "bottom",
+   "tma": 0.25,
+   "text": [
+    "„Je to moc drahé, čekal jsem míň.“",
+    "12 let dělám B2B obchod a uzavřel jsem přes 100 milionů korun. Tuhle větu slyším pořád. A jednou mě stála docela velkej kšeft…"
+   ]
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_bazen_hotel.jpg",
+   "velikost": "maly",
+   "pozice": "top",
+   "text": [
+    "Průměrný obchodník v tu chvíli začne obhajovat cenu:",
+    "„Ale vždyť je to kvalitní.“",
+    "„Ale konkurence je dražší.“",
+    "Klient se zavře a už jen brání svoji pravdu."
+   ],
+   "tma": 0.1
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_hory_batoh_zamysleny.jpg",
+   "velikost": "maly",
+   "pozice": 40,
+   "tma": 0.25,
+   "text": [
+    "Mých 12 let v obchodu mě naučilo jednu věc.",
+    "„Drahé“ neznamená ne.",
+    "Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl."
+   ]
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_more_zapad.jpg",
+   "velikost": "maly",
+   "pozice": 56,
+   "tma": 0.25,
+   "text": [
+    "Řekni tohle:",
+    "„Rozumím. Je to drahé, protože je to teď mimo váš rozpočet? Nebo protože zatím nevidíte, co vám to přinese?“"
+   ]
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_vyhled_pole.jpg",
+   "velikost": "maly",
+   "pozice": "top",
+   "text": [
+    "Tím, že jsi mu dal za pravdu, nemá s kým bojovat.",
+    "Tím, že ses zeptal, musí přemýšlet.",
+    "A ty víš, co řešit dál: peníze, nebo hodnotu."
+   ],
+   "tma": 0.25
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_dubaj_zapad_z_veze.jpg",
+   "velikost": "maly",
+   "pozice": "top",
+   "text": [
+    "Na „drahé“ odpověď máš. Dalších 39 je v e-booku.",
+    "Napiš do komentáře __NAMITKA__ a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ],
+   "tma": 0.25
+  }
+ ],
+ "stin": "zadny"
+}

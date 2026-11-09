@@ -1,0 +1,107 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Maddie VS",
+ "vystup": "export/maddie-vs",
+ "slidy": [
+  {
+   "format": "split",
+   "horni": {
+    "foto": "lifestyle/lifestyle_dubaj_zapad_z_veze.jpg",
+    "y": 100,
+    "text": "„Ale vždyť je to kvalitní.“",
+    "pod": "Průměrný obchodník",
+    "lab_y": 50
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_siroky_stul.jpg",
+    "y": 5,
+    "text": "„Rozumím. Je to drahé, protože je to teď mimo váš rozpočet?“",
+    "pod": "Top obchodník",
+    "lab_y": 50,
+    "tma": 0.25
+   }
+  },
+  {
+   "format": "split",
+   "horni": {
+    "foto": "lifestyle/lifestyle_vegas_bellagio.jpg",
+    "y": 95,
+    "text": "„Ale konkurence je dražší.“",
+    "pod": "Průměrný obchodník",
+    "lab_y": 50
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_podpis_papir.jpg",
+    "y": 5,
+    "text": "„Nebo protože zatím nevidíte, co vám to přinese?“",
+    "pod": "Top obchodník",
+    "lab_y": 50
+   }
+  },
+  {
+   "format": "split",
+   "horni": {
+    "foto": "lifestyle/lifestyle_plaz_more.jpg",
+    "y": 95,
+    "text": "Klient se zavře a už jen brání svoji pravdu.",
+    "pod": "Průměrný obchodník",
+    "lab_y": 50,
+    "tma": 0.15
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_siroky_studio.jpg",
+    "y": 25,
+    "text": "Klient nemá s kým bojovat a musí přemýšlet.",
+    "pod": "Top obchodník",
+    "lab_y": 50
+   }
+  },
+  {
+   "format": "pribeh",
+   "foto": "prace/prace_veletrh_notebook_6.jpg",
+   "pozice": "bottom",
+   "velikost": "velky",
+   "text": [
+    "# Proč na tom záleží?",
+    "~ „Drahé“ neznamená ne. Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl."
+   ],
+   "tma": 0.15
+  },
+  {
+   "format": "pribeh",
+   "foto": "prace/prace_veletrh_stanek_lide.jpg",
+   "pozice": "bottom",
+   "velikost": "velky",
+   "text": [
+    "~ Tím, že jsi mu dal za pravdu, nemá s kým bojovat. Tím, že ses zeptal, musí přemýšlet.",
+    "~ A ty víš, co řešit dál: peníze, nebo hodnotu."
+   ],
+   "tma": 0.25
+  },
+  {
+   "format": "pribeh",
+   "foto": "portrety/portrety_tmave_palec_usmev.jpg",
+   "pozice": "top",
+   "zarovnani": "vlevo",
+   "velikost": "maly",
+   "text": [
+    "# Jsem Marek",
+    "12 let dělám B2B obchod a uzavřel jsem přes 100 milionů korun.",
+    "Tuhle větu slyším pořád. A jednou mě stála docela velkej kšeft."
+   ]
+  },
+  {
+   "format": "pribeh",
+   "foto": "lifestyle/lifestyle_letadlo_a380.jpg",
+   "pozice": "bottom",
+   "velikost": "maly",
+   "text": [
+    "Na „drahé“ odpověď máš. Dalších 39 je v e-booku.",
+    "Napiš do komentáře __NAMITKA__ a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ]
+  }
+ ]
+}

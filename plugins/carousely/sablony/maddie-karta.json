@@ -1,0 +1,79 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Maddie karta",
+ "vystup": "export/maddie-karta",
+ "slidy": [
+  {
+   "format": "karta",
+   "foto": "lifestyle/lifestyle_dubaj_burj_khalifa_usmev_2.jpg",
+   "zoom": 1.3,
+   "y": 0,
+   "text": [
+    "„Je to moc drahé, čekal jsem míň.“"
+   ]
+  },
+  {
+   "format": "karta",
+   "foto": "prace/prace_veletrh_notebook_5.jpg",
+   "zoom": 1.3,
+   "y": 0,
+   "text": [
+    "Jsem Marek. 12 let dělám B2B obchod a uzavřel jsem přes 100 milionů korun.",
+    "Tuhle větu slyším pořád. A jednou mě stála docela velkej kšeft."
+   ],
+   "pozice": "bottom"
+  },
+  {
+   "format": "karta",
+   "foto": "lifestyle/lifestyle_soutesky_zabradli.jpg",
+   "text": [
+    "Průměrný obchodník v tu chvíli začne obhajovat cenu:",
+    "„Ale vždyť je to kvalitní.“",
+    "„Ale konkurence je dražší.“",
+    "Klient se zavře a už jen brání svoji pravdu."
+   ],
+   "pozice": "bottom"
+  },
+  {
+   "format": "karta",
+   "foto": "prace/prace_veletrh_stanek_zakaznici.jpg",
+   "zoom": 1.25,
+   "y": 0,
+   "text": [
+    "Mých 12 let v obchodu mě naučilo jednu věc.",
+    "„Drahé“ neznamená ne.",
+    "Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl."
+   ],
+   "pozice": "bottom"
+  },
+  {
+   "format": "karta",
+   "foto": "lifestyle/lifestyle_hory_batoh_zamysleny.jpg",
+   "text": [
+    "Řekni tohle:",
+    "„Rozumím. Je to drahé, protože je to teď mimo váš rozpočet? Nebo protože zatím nevidíte, co vám to přinese?“"
+   ]
+  },
+  {
+   "format": "karta",
+   "foto": "portrety/portrety_selfie_pocitac.jpg",
+   "text": [
+    "Tím, že jsi mu dal za pravdu, nemá s kým bojovat.",
+    "Tím, že ses zeptal, musí přemýšlet.",
+    "A ty víš, co řešit dál: peníze, nebo hodnotu."
+   ]
+  },
+  {
+   "format": "karta",
+   "foto": "portrety/portrety_tmave_palec_usmev.jpg",
+   "text": [
+    "Na „drahé“ odpověď máš. Dalších 39 je v e-booku.",
+    "Napiš do komentáře __NAMITKA__ a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ],
+   "pozice": "bottom"
+  }
+ ]
+}

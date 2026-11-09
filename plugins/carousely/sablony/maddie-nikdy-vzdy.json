@@ -1,0 +1,86 @@
+{
+ "fotky": "fotky",
+ "avatar": "avatar.jpg",
+ "jmeno": "Marek Trnka",
+ "handle": "@marektrnka.sales",
+ "nazev": "Maddie Nikdy / Vždycky",
+ "vystup": "export/maddie-nikdy-vzdy",
+ "slidy": [
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_tmave_siroky_stul.jpg",
+    "y": 5,
+    "text": "Nikdy neříkej: „Ale vždyť je to kvalitní.“",
+    "lab_y": 50,
+    "styl": "stred"
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_siroky_studio.jpg",
+    "y": 25,
+    "text": "Vždycky řekni: „Rozumím.“",
+    "lab_y": 50,
+    "styl": "stred"
+   }
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "portrety/portrety_tmave_mikrofon.jpg",
+    "y": 10,
+    "text": "Nikdy neříkej: „Ale konkurence je dražší.“",
+    "lab_y": 50,
+    "styl": "stred"
+   },
+   "dolni": {
+    "foto": "portrety/portrety_tmave_podpis_papir.jpg",
+    "y": 5,
+    "text": "Vždycky řekni: „Je to drahé, protože je to teď mimo váš rozpočet?“",
+    "lab_y": 50,
+    "styl": "stred"
+   }
+  },
+  {
+   "format": "split",
+   "vs": false,
+   "horni": {
+    "foto": "lifestyle/lifestyle_dubaj_zapad_z_veze.jpg",
+    "y": 100,
+    "text": "Nikdy neříkej: „Ale…“",
+    "lab_y": 50,
+    "styl": "stred"
+   },
+   "dolni": {
+    "foto": "lifestyle/lifestyle_vegas_bellagio.jpg",
+    "y": 95,
+    "text": "Vždycky řekni: „Nebo protože zatím nevidíte, co vám to přinese?“",
+    "lab_y": 50,
+    "styl": "stred"
+   }
+  },
+  {
+   "format": "boxy",
+   "foto": "prace/prace_veletrh_jednani_smich.jpg",
+   "pozice": 68,
+   "text": [
+    "# Jsem Marek",
+    "12 let dělám B2B obchod.",
+    "Uzavřel jsem přes 100 milionů korun.",
+    "Tuhle větu slyším pořád. A jednou mě stála docela velkej kšeft."
+   ]
+  },
+  {
+   "format": "boxy",
+   "foto": "lifestyle/lifestyle_dubaj_vyhled_2.jpg",
+   "pozice": 30,
+   "text": [
+    "# „Drahé“ neznamená ne",
+    "Znamená, že klient ještě nedostal odpověď na otázku, kterou nahlas neřekl.",
+    "Tím, že jsi mu dal za pravdu, nemá s kým bojovat. Tím, že ses zeptal, musí přemýšlet.",
+    "Napiš do komentáře NAMITKA a pošlu ti zdarma do zpráv 40 odpovědí na námitky klientů."
+   ]
+  }
+ ]
+}
